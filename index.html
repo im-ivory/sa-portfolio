@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/069f611680.js" crossorigin="anonymous"></script>
+    <title>웹퍼블리셔 임상아입니다</title>
+</head>
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+   <div class="wrap">
+    <div class="menu-bar">
+        <ul class="menu">
+            <li onclick="$('html, body').stop().animate( { scrollTop : 0 } );">HOME</li>
+            <li onclick="fnMove('1')">ABOUT ME</li>
+            <li onclick="fnMove('2')">HASHTAGS</li>
+            <li onclick="fnMove('3')">PROJECTS</li>
+        </ul>
+    </div>
+    <div class="mobile-menu-bar">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a onclick="topScroll();closeNav();">HOME</a>
+              <a onclick="fnMove('1');closeNav();">ABOUT ME</a>
+              <a onclick="fnMove('2');closeNav();">HASHTAGS</a>
+              <a onclick="fnMove('3');closeNav();">PROJECTS</a>
+            </div>
+          </div>    
+          <span class="hamburger" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <div class="background">
+                <!-- <div class="circle float"></div>
+                <div class="circle float"></div> -->
+                <div class="circle small"></div>
+                <div class="circle big"></div>
+            </div>
+            <div class="title">
+                <strong>WEB<br>PUBLISHER<br>SANGAH'S<br>PORTFOLIO</strong>
+            </div>
+            <div class="scroll-Btn">
+                <img src="content/arrow.png" class="fas fa-chevron-down hvr-pulse" onclick="fnMove('1')">
+            </div>
+        </div>
+        <div class="about-me" id="section1">
+            <div class="title">
+                <strong>ABOUT</strong><br>
+                <strong>ME</strong>
+            </div>
+            <div class="profile">
+                <div class="info" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+                        <img src="content/smile.png" alt="">
+                        <img id="wink" src="content/wink.png" alt="">
+                    </div>
+                    <p>임상아<br>
+                        1997.06.27<br>
+                        010-7449-1253<br>
+                        im-ivory@gmail.com</p>
+                </div>
+                <div class="education" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="icon">
+                        <img class="hvr-float" src="content/education.png" alt="">
+                    </div>
+                    <p class="date">2013-2015.</p>
+                    <p>과천외국어고등학교 중국어과 졸업</p>
+                    <p class="date">2016-2021.</p>
+                    <p>숭실대학교 영어영문학 주전공<br>뉴미디어콘텐츠융합전공 졸업</p>
+                </div>
+                <div class="certificate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="icon">
+                        <img src="content/certif.png" alt="">
+                        <img id="twinkle" src="content/twinkle-black.png" alt="">
+                    </div>
+                    <p>ACA Photoshop CS6
+                        <br>MOS Excel
+                        <br>TOEIC 945</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <p>#SKILLS</p>
+                </div>
+                <ul data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <li><img src="content/html5.png"></li>
+                    <li><img src="content/css_icon.png"></li>
+                    <li><img src="content/jquery.gif"></li>
+                    <li><img src="content/js.png"></li>
+                    <li><img src="content/ps.png"></li>
+                    <li><img src="content/ai.png"></li>
+                </ul>
+            </div>
+            <div class="scroll-Btn">
+                <img src="content/arrow.png" class="fas fa-chevron-down hvr-pulse" onclick="fnMove('2')">
+            </div>
+        </div>
+        <div class="hashtags" id="section2">
+            <div class="title">
+                <strong>#HASHTAGS</strong>
+            </div>
+            <div class="hashtag comfort" data-aos="flip-left" data-aos-duration="1000">
+                <div class="title">
+                    <strong>#편안함</strong>
+                </div>
+                <div class="text">
+                    <p>누구에게나 편안함을 줄 수 있는 사람이 되고 싶습니다. 마크업에서도 편안함을 최우선으로 합니다. 보기에도, 수정하기에도 편안한 웹페이지를 만드는 것이 저의 목표입니다.</p>
+                </div>
+            </div>
+            <div class="hashtag responsibility" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                <div class="title">
+                    <strong>#책임감</strong>
+                </div>
+                <div class="text">
+                 <p>주어진 일은 항상 최선을 다하고 실수를 방지하기 위해 매번 여러 번 검토를 하며 정해진 기한은 반드시 지킵니다. 협업 일정에 차질이 생기지 않고 원활하게 진행될 수 있도록 책임감 있게 행동합니다.</p>
+                </div>
+            </div>
+            <div class="hashtag communication" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="title">
+                    <strong>#소통장인</strong>
+                </div>
+                <div class="text">
+                <p>다양한 분야의 사람들과 협업이 필요한 퍼블리셔로서 소통은 자신 있습니다!</p>
+                </div>
+            </div>
+            <div class="scroll-Btn">
+                <img src="content/arrow.png" class="fas fa-chevron-down hvr-pulse" onclick="fnMove('3')">
+            </div>
+        </div>
+        <div class="projects" id="section3">
+            <div class="title">
+                <strong>PRJOECTS</strong>
+            </div>
+           <div class="project-container">
+                <div class="project smartzzang">
+                    <div class="imgs">
+                        <a target="_blank" href="https://im-ivory.github.io/smartzzang_clone/">
+                            <img class="pc" src="content/smart-pc3.png" alt="smartzzang-pc" data-aos="fade-up" data-aos-duration="1000">
+                            <img class="mobile" src="content/phone.png" alt="smartzzang-mobile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        </a>
+                    </div>
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="title">
+                            <strong>스마트짱 클론코딩</strong>
+                        </div>
+                        <div class="comment">
+                            <p>PC버전/모바일버전 반응형 웹사이트<br>
+                                메인페이지 100% 하드코딩<br>
+                                이미지는 기존 사이트에서 가져왔습니다.</p>
+                                <p>swiper-slide와 slick-slider<br>라이브러리를 활용했습니다.</p>
+                        </div>
+                        <div class="View_Btn">
+                            <button onClick="window.open('https://im-ivory.github.io/smartzzang_clone/')">VIEW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project hyundai">
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="title">
+                            <strong>현대모터스튜디오 클론코딩</strong>
+                        </div>
+                        <div class="comment">
+                            <p>PC버전/모바일버전 반응형 웹사이트<br>
+                                메인페이지, 로그인페이지 100% 하드코딩<br>
+                                이미지는 기존 사이트에서 가져왔습니다.</p>
+                                <p>swiper-slide와 slick-slider<br>라이브러리를 활용했습니다.</p>
+                        </div>
+                        <div class="View_Btn">
+                            <button onClick="window.open('https://im-ivory.github.io/hyundaimotorstudio_clone/index.html')">MAIN</button>
+                            <button onClick="window.open('https://im-ivory.github.io/hyundaimotorstudio_clone/login.html')">LOGIN</button>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <a target="_blank" href="https://im-ivory.github.io/hyundaimotorstudio_clone/index.html">
+                            <img class="pc" src="content/hm-pc.png" alt="" data-aos="fade-up" data-aos-duration="1000" >
+                            <img class="mobile" src="content/phone.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        </a>
+                    </div>         
+                </div>
+                <div class="project ohkitchen">
+                    <div class="imgs">
+                        <a target="_blank" href="https://im-ivory.github.io/ohkitchen/">
+                            <img class="pc" src="content/ohkitchen.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+                        </a>
+                    </div>
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300">
+                        <div class="title">
+                            <strong>오키친 클론코딩</strong>
+                        </div>
+                        <div class="comment">
+                            <p>PC버전 웹사이트<br>
+                                메인페이지 100% 하드코딩<br>
+                                이미지는 기존 사이트에서 가져왔습니다.</p>
+                                <p>slick-slider 라이브러리를 활용했습니다.</p>
+                        </div>
+                        <div class="View_Btn">
+                            <button onClick="window.open('https://im-ivory.github.io/ohkitchen/')">VIEW</button>
+                        </div>
+                    </div>      
+                </div>
+                <div class="project netmarble">
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="title">
+                            <strong>넷마블스토어 클론코딩</strong>
+                        </div>
+                        <div class="comment">
+                            <p>PC버전 웹사이트<br>
+                                메인페이지 100% 하드코딩<br>
+                                이미지는 기존 사이트에서 가져왔습니다.</p>
+                                <p>slick-slider 라이브러리를 활용했습니다.</p>
+                        </div>
+                        <div class="View_Btn">
+                            <button onClick="window.open('https://im-ivory.github.io/netmarblestore/')">VIEW</button>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <a target="_blank" href="https://im-ivory.github.io/netmarblestore/">
+                            <img class="pc" src="content/netmarble.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+                        </a>
+                    </div>         
+                </div>
+                <div class="project portfolio">
+                    <div class="imgs">
+                        <a target="_blank" href="https://im-ivory.github.io/hyundaimotorstudio_clone/index.html">
+                            <img class="pc" src="content/portfolio.png" alt="" data-aos="fade-up" data-aos-duration="1000" >
+                            <img class="mobile" src="content/phone.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        </a>
+                    </div>   
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="title">
+                            <strong>포트폴리오 사이트</strong>
+                        </div>
+                        <div class="comment">
+                            <p>PC버전/모바일버전 반응형 웹사이트<br>
+                                디자인 100%, 퍼블리싱 100%<br>
+                                </p>
+                                <p>페이지 내 모든 일러스트는<br>직접 제작했습니다.</p>
+                        </div>
+                    </div>                       
+                </div>
+                <div class="scroll-down">
+                    <span></span><span></span><span></span>
+                    <p>Scroll</p>
+                </div>
+           </div>
+        </div>
+        <div class="contact" id="section4">
+            <strong data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">감사합니다! :)</strong>
+            <div class="buttons">
+                <button class="send-mail hvr-sweep-to-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="mailto: imiivory@gmail.com" title="메일 보내기"><i class="far fa-paper-plane"></i>Send Email</a></button>
+                <button class="github hvr-sweep-to-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="https://github.com/im-ivory" target="_blank" title="깃허브 보기"><i class="fab fa-github"></i>View GitHub</a></button>
+            </div>
+            <div class="top-Btn" onclick="topScroll();">
+                <img src="content/arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+    <script src="main.js"></script>
+</body>
+</html>
