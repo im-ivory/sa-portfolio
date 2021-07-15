@@ -892,6 +892,9 @@ body {
     height: 75%;
     right: -8%;
   }
+  .projects .project.hyundai .imgs .mobile{
+    border-radius: 10px;
+  }
   .projects .project.portfolio .imgs .mobile{
     border-radius: 5px;
   } 
