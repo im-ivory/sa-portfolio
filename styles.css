@@ -892,6 +892,9 @@ body {
     height: 75%;
     right: -8%;
   }
+  .projects .project.portfolio .imgs .mobile{
+    border-radius: 5px;
+  } 
   .projects .project > .text {
     font-size: 1rem;
   }
