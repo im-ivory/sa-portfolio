@@ -409,6 +409,9 @@ body {
 .projects .project + .project {
   padding-top: 200px;
 }
+.projects .project.linkssu {
+  padding-top: 100px;
+}
 
 .scroll-down {
   position: absolute;
@@ -470,7 +473,7 @@ body {
     opacity: 0;
   }
 }
-.projects .project-container .project:nth-child(2n) .text {
+.projects .project-container .project:nth-child(2n-1) .text {
   text-align: right;
 }
 .projects .project.portfolio .imgs .mobile {
@@ -666,7 +669,7 @@ body {
     left: 30%;
   }
   .hashtags .hashtag.communication {
-    right: 15%;
+    right: 10%;
   }
   .hashtags .hashtag .text {
     font-size: 1rem;
@@ -892,12 +895,6 @@ body {
     height: 75%;
     right: -8%;
   }
-  .projects .project.hyundai .imgs .mobile{
-    border-radius: 10px;
-  }
-  .projects .project.portfolio .imgs .mobile{
-    border-radius: 5px;
-  } 
   .projects .project > .text {
     font-size: 1rem;
   }
@@ -915,6 +912,7 @@ body {
   .scroll-down {
     top: 530px;
   }
+  .projects .linkssu,
   .projects .hyundai,
   .projects .netmarble {
     flex-direction: column-reverse;
@@ -937,6 +935,7 @@ body {
   }
   .projects .project-container .project:nth-child(2n-1) .text {
     padding-left: 0;
+    text-align: center;
   }
   .projects .project + .project {
     padding-top: 100px;
