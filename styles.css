@@ -486,7 +486,7 @@ body {
   height: 78%;
   background-image: url("content/hm-mobile.png");
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 17px;
   position: absolute;
   left: 0;
   bottom: -50px;
@@ -926,6 +926,9 @@ body {
     height: 90%;
     left: initial;
     bottom: -30px;
+  }
+  .projects .project.portfolio .imgs .mobile {
+    border-radius: 10px;
   }
   .projects .project-container .project .text {
     text-align: center;
