@@ -373,6 +373,7 @@ body {
 .projects .project > .text {
   font-size: 1.3rem;
 }
+
 .projects .project > .text .title {
   font-family: "GmarketB";
   font-size: 2rem;
@@ -405,7 +406,7 @@ body {
 .projects .project + .project {
   padding-top: 200px;
 }
-.projects .project.linkssu {
+.projects .project.yanolza {
   padding-top: 100px;
 }
 
@@ -469,8 +470,16 @@ body {
     opacity: 0;
   }
 }
-.projects .project-container .project:nth-child(2n-1) .text {
+.projects .project-container .project:nth-child(2n) .text {
   text-align: right;
+}
+.projects .project-container .project:nth-child(2n-1) .text {
+  text-align: left;
+}
+.projects .project.yanolza .imgs .mobile {
+  width: 19%;
+  height: 74%;
+  background-image: url("../content/yanolza-mobile.png");
 }
 .projects .project.portfolio .imgs .mobile {
   width: 19%;
@@ -690,12 +699,7 @@ body {
     line-height: 1.5rem;
     word-break: keep-all;
   }
-  .projects .project-container .project:nth-child(2n) .text {
-    padding-right: 40px;
-  }
-  .projects .project-container .project:nth-child(2n-1) .text {
-    padding-left: 40px;
-  }
+
   .projects .project .text .View_Btn button {
     font-size: 1rem;
   }
@@ -917,6 +921,11 @@ body {
   .projects .netmarble {
     flex-direction: column-reverse;
   }
+
+  .projects .project.yanolza .imgs .mobile {
+    border-radius: 9px;
+  }
+
   .projects .project.hyundai .imgs .mobile {
     width: 30%;
     height: 90%;
